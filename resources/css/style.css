@@ -29,7 +29,7 @@ html {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -70,6 +70,17 @@ nav a {
   color: #4a4a4a;
 }
 
+nav .button {
+  padding: .1875rem .5rem;
+  background-color: #9dc20b;
+  line-height: 1.6;
+  color: white;
+}
+
+nav li:last-child {
+  display: none;
+}
+
 header .icon {
   width: 1rem;
   padding-left: .75rem;
@@ -79,7 +90,17 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
@@ -102,13 +123,6 @@ header .mobile {
 
   header .mobile li {
     padding: 0;
-  }
-
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
   }
 }
 
@@ -170,7 +184,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -202,7 +216,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -256,11 +270,19 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 895px) {
+  #features-section {
+    padding: 1rem;
+  }
+
+  .feature {
+    margin: 0px .5rem;
+    padding: 1rem;
+  }
+
   .feature h2 {
-    font-size: 1.125rem;
+    font-size: 2rem;
     line-height: 1.3;
-    font-weight: normal;
   }
 
   .feature h3 {
@@ -269,7 +291,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -316,7 +338,7 @@ header .mobile {
   padding: 0 1%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -353,7 +375,10 @@ header .mobile {
 }
 
 #quotes-section .content {
-  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
 }
 
 #quotes-section .quote {
@@ -369,8 +394,15 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
   #quotes-section .content {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #quotes-section .content {
+    flex-flow: column;
     padding: 1.875rem .625rem;
   }
 
@@ -403,7 +435,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   footer .content {
     font-size: .625rem;
   }
